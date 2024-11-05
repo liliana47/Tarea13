@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Operaciones = prompt("elija la operacion que quiera realizar: Suma, Resta, Multiplicacion, Division :");
+        let Num1 = parseFloat(("Dijite el primer numero: "));
+        let Num2 = parseFloat(("Dijite el ssegundo numero: "));
+        let Resultado;
+
+        function Nombre_Operacion(Num1, Num2, Operaciones){
+            if(Operaciones == "Suma"){
+                Resultado = Num1 + Num2;
+            }else if(Operaciones == "Resta"){
+                    Resultado = Num1 - Num2;
+            }else if(Operaciones == "Multiplicacion"){
+                Resultado = Num1 * Num2;
+            }else Resultado = Num1/ Num2;
+        return Resultado;
+        }
+
+        Resultado = Nombre_Operacion(Num1, Num2, Operaciones);
+
+        console.log("El resultado de la operacion es: ", Resultado);
+
+    </script>
+</body>
+</html>
